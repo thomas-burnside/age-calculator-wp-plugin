@@ -1,0 +1,81 @@
+/* Ensure full transparency for body and html */
+body.age-calculator-active,
+html.age-calculator-active {
+    background: none !important; /* Remove any background */
+    background-color: transparent !important; /* Explicitly set to transparent */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+}
+
+body.age-calculator-active .et_pb_code_0 {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+
+/* Scoped styles for the age calculator container */
+.age-calculator {
+    background-color: white; /* White container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* Subtle shadow */
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/* Styles for text and form inside the container */
+.age-calculator h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.age-calculator .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age-calculator label {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.age-calculator input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.age-calculator button {
+    background-color: #0097b2;
+    color: white;
+    border: 2px solid #ffbd59;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.age-calculator #result {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.et_pb_code_0 {
+    background: none !important; /* Remove any background */
+    background-color: transparent !important; /* Force transparency */
+    box-shadow: none !important; /* Remove any default shadow */
+    border: none !important; /* Remove border if present */
+    padding: 0 !important; /* Reset padding if necessary */
+}
+

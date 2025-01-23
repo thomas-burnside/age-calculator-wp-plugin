@@ -1,23 +1,13 @@
-/* Ensure full transparency for body and html */
-body.age-calculator-active,
-html.age-calculator-active {
+.et_pb_code_0 {
     background: none !important; /* Remove any background */
-    background-color: transparent !important; /* Explicitly set to transparent */
-    margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
+    background-color: transparent !important; /* Force transparency */
+    box-shadow: none !important; /* Remove any default shadow */
+    border: none !important; /* Remove border if present */
+    padding: 0 !important; /* Reset padding if necessary */
 }
-
-body.age-calculator-active .et_pb_code_0 {
-    background: none !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-    padding: 0 !important;
-}
-
 
 /* Scoped styles for the age calculator container */
-.age-calculator {
+.age-calculator .container {
     background-color: white; /* White container */
     box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* Subtle shadow */
     padding: 20px;
@@ -28,7 +18,7 @@ body.age-calculator-active .et_pb_code_0 {
 }
 
 /* Styles for text and form inside the container */
-.age-calculator h1 {
+.age-calculator .container h1 {
     font-family: "Libre Baskerville", serif;
     font-size: 35px;
     margin-top: 0px;
@@ -36,18 +26,18 @@ body.age-calculator-active .et_pb_code_0 {
     text-align: center;
 }
 
-.age-calculator .form {
+.age-calculator .container .form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.age-calculator label {
+.age-calculator .container label {
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.age-calculator input {
+.age-calculator .container input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -56,7 +46,7 @@ body.age-calculator-active .et_pb_code_0 {
     margin-bottom: 20px;
 }
 
-.age-calculator button {
+.age-calculator .container button {
     background-color: #0097b2;
     color: white;
     border: 2px solid #ffbd59;
@@ -66,16 +56,9 @@ body.age-calculator-active .et_pb_code_0 {
     cursor: pointer;
 }
 
-.age-calculator #result {
+.age-calculator .container #result {
     margin-top: 20px;
     font-size: 24px;
 }
 
-.et_pb_code_0 {
-    background: none !important; /* Remove any background */
-    background-color: transparent !important; /* Force transparency */
-    box-shadow: none !important; /* Remove any default shadow */
-    border: none !important; /* Remove border if present */
-    padding: 0 !important; /* Reset padding if necessary */
-}
 

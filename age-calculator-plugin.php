@@ -10,6 +10,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+//function debug background color
 function age_calculator_body_class($classes) {
     if (is_singular() && has_shortcode(get_post()->post_content, 'age_calculator')) {
         $classes[] = 'age-calculator-active';

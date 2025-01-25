@@ -2,23 +2,9 @@
 /**
  * Plugin Name: TB #1 Age Calculator 
  * Description: A simple age calculator plugin for WordPress.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Thomas Burnside
  */
-
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly
-}
-
-//function debug background color
-function age_calculator_body_class($classes) {
-    if (is_singular() && has_shortcode(get_post()->post_content, 'age_calculator')) {
-        $classes[] = 'age-calculator-active';
-    }
-    return $classes;
-}
-add_filter('body_class', 'age_calculator_body_class');
-
 
 
 // Enqueue styles and scripts
@@ -45,14 +31,12 @@ function age_calculator_shortcode() {
     ob_start();
     ?>
     <div class="age-calculator">
-        <div class="container">
         <h1>Age Calculator</h1>
         <div class="form">
             <label for="birthday">Enter your date of birth</label>
             <input type="date" id="birthday" name="birthday">
             <button id="btn">Calculate Age</button>
             <p id="result"></p>
-        </div>
         </div>
     </div>
     <?php
